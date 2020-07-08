@@ -1,0 +1,510 @@
+/*======================================
+
+        Default Values
+
+Fonts: Roboto(paragraphs), Calistoga (headings)
+
+Colors:
+1. Sizzling Red: #f53b57;
+2. Really Dark Blue: #181e2c;
+3. Realy Light Blue: #e5ebf8;
+
+======================================*/
+
+
+
+/*------------------------------
+        Basic setup
+------------------------------*/
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    color: #181e2c;
+    text-rendering: optimizeLegibility;
+}
+
+body h1,
+body h2,
+body h3,
+body h4{
+    font-family: 'Calistoga', cursive;
+}
+
+li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/*------------------------------
+        Heading
+------------------------------*/
+header{
+    width: 100%;
+    background-color: #181e2c;
+    color: #e5ebf8;
+}
+
+.heading-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.heading-div h1{
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+
+.nav-menu a{
+    color: #e5ebf8;
+    padding: 31px 30px;
+    font-size: 21px;
+    transition: 0.3s all ease-in-out;
+    color: #e5ebf8;
+    font-style: serif;
+}
+
+.nav-menu a:hover{
+    background-color: #f53b57;
+}
+
+
+/*------------------------------
+        Header-Image
+------------------------------*/
+.header-image{
+    height: 60vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #e5ebf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-image h2{
+    font-size: 4.06rem;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+.header-image p{
+    font-size: 1.43rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+/*------------------------------
+        Personal-Info
+------------------------------*/
+.personal-info{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.personal-info img{
+    border: 4px solid #f53b57;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: 0.3s all linear;
+}
+
+.personal-info img:hover{
+    border-radius: 50%;
+    filter: grayscale(0);
+}
+
+.personal-info h2{
+    margin-top: 30px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.personal-info h3{
+    margin-top: 40px;
+    font-size: 2.19rem
+}
+
+.personal-info p{
+    max-width: 1200px;
+    font-size: 1.19rem;
+    margin: 30px auto;
+}
+
+
+/*------------------------------
+        Ability
+------------------------------*/
+
+.abilities{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 120px auto;
+}
+
+.ability:nth-child(2){
+    margin: 0px 22px;
+}
+
+.ability i{
+    color: #f53b57;
+    font-size: 5.31rem;
+}
+
+.ability h3{
+    margin-top: 20px;
+    font-size: 1.69rem;
+}
+
+.ability p{
+    margin-top: 40px;
+    text-align: center;
+    
+}
+
+/*------------------------------
+        Gallery
+------------------------------*/
+.works{
+    text-align: center;
+    background: #181e2c;
+    color: #e5ebf8;
+    width: 100%;
+    padding: 80px 0px;
+}
+.works h2{
+    padding: 10px 0;
+}
+
+.works-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+.works-gallery img{
+    width: 32%;
+    margin:1% 0;
+}
+
+
+/* -----------------------------
+       Contact
+------------------------------*/
+
+.contact-form{
+    color:#e5ebf8; 
+    background-color: #f53b57;
+    padding: 80px 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contact-form h2{
+    font-size: 2.81rem;
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+
+.input-form{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;;
+}
+.input-form .labels{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.input-form input,
+.input-form textarea{
+    width: 100%;
+ 
+    padding:9px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #e5ebf8; 
+}
+.input-form textarea{
+    resize: none;
+}
+input:focus, textarea:focus{
+    background-color:#181e2c;
+    color:#e5ebf8; 
+}
+
+.button{
+   display: inline-block;
+   margin-top: 40px;
+   border-radius: 10px;
+   border: 2px solid #e5ebf8; 
+   font-size:1.25rem ;
+   color:black;
+   background-color:red;
+   transition: 0.3s all;
+
+}
+
+.button:hover{ 
+transform: scale(0.95);
+
+}
+
+/* -----------------------------
+            Footer
+------------------------------*/
+
+footer{
+    text-align: center;
+    padding: 15px;
+    color: #e5ebf8; 
+    background-color: #181e2c;;
+}
+
+
+
+
+
+/* -----------------------------
+        Media Query
+------------------------------*/
+
+@media all and (max-width:991px){
+    .heading-div h1{
+        font-size: 1.56rem;
+    }
+    .nav-menu a{
+        font-size: 1.2rem;
+        padding: 25.5px 10px;
+    }
+    .header-image{
+        height: 50vh;
+    }
+    .header-image h2{
+        font-size: 2.5rem;
+    }
+    .header-image p{
+        font-size: 1.2rem;
+    }
+    .personal-info{
+        margin-top: 50px;
+    }
+    .personal-info img{
+        width: 30%;
+    }
+    .personal-info h2{
+        font-size: 2rem;
+        margin-top:25px;
+    }
+    .personal-info h3{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+    .personal-info p{
+        width:700px ;
+        font-size:1rem;
+        margin: 20px auto;
+        text-align: justify;
+    }
+    .abilities{
+        flex-direction: column;
+        margin: 60px auto;
+    }
+    .ability i{
+        font-size:3rem ;
+    }
+    .ability p{
+        margin-top: 5px;
+        margin-bottom: 30px;
+        max-width: 650px;
+    }
+    .ability h3{
+        margin-top: 10px;
+    }
+    .works{
+        padding: 10px 0;
+    }
+    .works h2{
+        padding: 10px 0;
+    }
+    .works-gallery{
+        max-width: 760px;
+    }
+    .works-gallery img {
+        width: 48%;
+        justify-content: space-around;
+        margin: 1% auto;
+    }
+    .contact-form{
+        padding: 33px 10px;
+        text-transform: none;
+    }
+    .contact-form h2 {
+        font-size: 1.81rem;
+        padding: 0 0;
+
+    }
+    .input-form .labels {
+        margin-top: 13px;
+        margin-bottom: 0px;
+
+    }
+    .button:hover {
+        transition: 0.3s all;
+    }
+    footer{
+        padding: 8px;
+    }
+    footer p{
+        font-size: 12px;
+    }    
+}
+
+
+@media all and (max-width:768px){
+    .heading-div {
+    flex-direction: column;
+}
+.nav-menu a {
+    font-size: 0.9rem;
+    margin-top: 0px;
+    padding: 18px 20px;
+}
+.heading-div h1 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.header-image{
+    height: 40vh;
+}
+.header-image h2 {
+    font-size: 2rem;
+    
+}
+.header-image p {
+    font-size: 1rem;
+}
+.personal-info h2 {
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+.personal-info h3 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+.personal-info p {
+    width: 450px;
+    font-size: 0.9rem;
+    margin: 10px auto;
+
+}
+.ability i {
+    font-size: 2rem;
+}
+.ability h3 {
+    font-size: 1.3rem;
+}
+.ability p {
+    font-size: 0.9rem;
+    max-width: 450px;
+}
+.abilities {
+    flex-direction: column;
+    margin: 30px auto;
+}
+.works h2 {
+    padding: 8px 0;
+    font-size: 1.2rem;
+}
+.works-gallery {
+    width: 450px;
+}
+.works-gallery img {
+    width: 98%;
+    margin: 2% auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:480px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
