@@ -447,11 +447,14 @@ footer{
     font-size: 1.2rem;
 }
 .works-gallery {
-    width: 450px;
+    width: 501px;
 }
 .works-gallery img {
     width: 98%;
     margin: 2% auto;
+}
+.ability:nth-child(2) {
+    margin:0;
 }
 }
 
@@ -461,7 +464,7 @@ footer{
     .heading-div h1{
         font-size: 1rem;
         margin-bottom: 10px;
-margin-top: 10px;
+        margin-top: 10px;
     }
     .nav-menu a {
         font-size: 0.8rem;
@@ -482,16 +485,16 @@ margin-top: 10px;
         width: 310px;
     }
     .personal-info h3 {
-        width: 310px;
+    
     }
-
-
-
-
-
-
-
-
+    .ability p {
+        font-size: 0.9rem;
+        max-width: 450px;
+    }
+    .works-gallery img {
+        width: 60%;
+    
+    }
 
 
 }
@@ -501,21 +504,30 @@ margin-top: 10px;
 
 @media all and (max-width:320px){
     .nav-menu a {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         margin-top: 0px;
         padding: 8px 10px;
     }
     .personal-info p {
         font-size: 0.8rem;
         margin: 5px auto;
-        width: 290px;
+        max-width: 300px;
     }
     .personal-info h3 {
     
         font-size: 0.8rem;
     }
-
- 
+    .ability p {
+    font-size: 0.8rem;
+    max-width: 450px;
+}
+.works-gallery{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
 }
 
