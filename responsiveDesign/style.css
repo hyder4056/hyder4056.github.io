@@ -453,25 +453,37 @@ footer{
     width: 98%;
     margin: 2% auto;
 }
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media all and (max-width:500px){
+    .heading-div h1{
+        font-size: 1rem;
+        margin-bottom: 10px;
+margin-top: 10px;
+    }
+    .nav-menu a {
+        font-size: 0.8rem;
+        margin-top: 0px;
+        padding: 8px 10px;
+    }
+    .heading-div{
+        padding: 8px;
+    }
+    .header-image h2 {
+        font-size: 1.5rem;
+        word-spacing: normal;
+        letter-spacing: normal;
+    }
+    .personal-info p {
+        font-size: 0.9rem;
+        margin: 10px auto;
+        width: 310px;
+    }
+    .personal-info h3 {
+        width: 310px;
+    }
 
 
 
@@ -487,15 +499,24 @@ footer{
 
 
 
-
-
-
-
-
-
-
-@media all and (max-width:480px){
+@media all and (max-width:320px){
+    .nav-menu a {
+        font-size: 0.6rem;
+        margin-top: 0px;
+        padding: 8px 10px;
+    }
+    .personal-info p {
+        font-size: 0.8rem;
+        margin: 5px auto;
+        width: 290px;
+    }
+    .personal-info h3 {
     
+        font-size: 0.8rem;
+    }
+
+ 
+
 }
 
 
