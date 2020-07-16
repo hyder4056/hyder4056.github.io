@@ -52,10 +52,14 @@ li{
 nav{
 
 }
-.header-section{
+.header-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 1200px;
+    background: #FFF;
 }
 .header-image img{
     width: 80px;
