@@ -78,9 +78,9 @@ nav{
 
 .header-big-image {
     background-image: url(img/cover.jpg);
-    height: 60vh;
+    height: 100vh;
     width: 100%;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
