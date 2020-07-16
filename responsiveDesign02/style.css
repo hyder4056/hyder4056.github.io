@@ -73,7 +73,7 @@ nav{
 }
 
 
-.header-big-image{
+.header-big-image {
     background-image: url(img/cover.jpg);
     height: 60vh;
     width: 100%;
@@ -82,6 +82,7 @@ nav{
     background-size: cover;
     background-attachment: fixed;
     margin-bottom: 60px;
+    margin-top: 84px;
 }
 
 
