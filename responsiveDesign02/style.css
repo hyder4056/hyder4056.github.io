@@ -27,7 +27,10 @@ body p{
 body h1,
 body h2,
 body h3,
-body h4{
+body h4,
+body ul,
+body li,
+body ul li a{
     font-family: 'Do Hyeon', sans-serif;
 }
 a{
