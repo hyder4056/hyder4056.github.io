@@ -1,321 +1,379 @@
-/* --------------------------
-1. fonts: 
-a. paragraph: font-family: 'Roboto', sans-serif;
-b. heading: font-family: 'Do Hyeon', sans-serif;
+/*-------------------------------
+font-family: 'Raleway', sans-serif;
 
-2. Background: #FFFFFF;
+1. red: #ff5757;
+2. Gray: #111;
+----------------------------------- */
 
-3. Text-Color: #111111;
 
-4. RedColor: #FF5757;
------------------------------
-*/
-
-/* ---------------------------
-            Common Work
------------------------------- */
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-html{
-    background-color: #FFFFFF;
-}
-body p{
-     font-family:'Roboto', sans-serif ;
-}
-body h1,
-body h2,
-body h3,
-body h4,
-body ul,
-body li,
-body ul li a{
-    font-family: 'Do Hyeon', sans-serif;
-}
-a{
-    text-decoration: none;
-    font-family: serif;
-}
-li{
-    display: inline-block;
-    list-style-type: none;
-}
+/* **********************************
+            Basic Setup
+*********************************** */
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-
-
-/* ------------------------------
-            Header
---------------------------------- */
-nav{
-
+body{
+    color: #111;
+    font-family: 'Raleway', sans-serif; 
 }
-.header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 1200px;
-    background: #FFF;
-}
-.header-image img{
-    width: 80px;
-}
-.header-nav ul li a{
-    padding: 10px 15px;
-    transition: 0.3s ease-in-out;
-}
-.header-nav ul li a:hover{
-    border-bottom: 3px solid #FF5757; ;
-}
-
-
-.header-big-image {
-    background-image: url(img/cover.jpg);
-    height: 100vh;
-    width: 100%;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-bottom: 60px;
-    margin-top: 84px;
-}
-
-
-/* ------------------------------
-            Section Big Text
---------------------------------- */
-
-.big-text{
-    text-align: left;
-}
-.line{
-    border-bottom: 3px solid #131212;
-    margin-top: 10px;
-    margin-bottom: 60px;
-}
-
-/* ------------------------------
-            Section Text
---------------------------------- */
-.section-text{
-    margin-bottom:60px ;
-}
-.margin-bottom{
-    margin-bottom: 20px;
-}
-p{
+body p{
     text-align: justify;
 }
 
-.works{
+a{
+    text-decoration: none;
+}
+
+li{
+    display: inline-block;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    border-color: #fff; 
+}
+
+/* ===================================
+             Header
+=====================================*/
+
+header{
+    width: 100%;
+    border-color: #fff;
+    color: #111;
+}
+
+.heading-div{
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
+    position: relative;
 }
-.works .images{
+
+.heading-div img{
+    width: 120px;
+}
+
+.nav-menu a{
+    color: #111;
+    padding: 15px 10px;
+    margin: 0 20px;
+    font-size:1.31rem ;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.nav-menu a:hover{
+    border-bottom: 3px solid #ff5757;
+}
+
+/* Sticky NAV */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.94);
+}
+
+/* Mobile NAV */
+.hamburger-menu{
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: none;
+}
+
+.hamburger{
+    height: 3px ;
+    width: 30px;
+    background-color: #111;
+    border-radius: 10%;
+    margin: 5px;
+}
+
+/* ===================================
+             Header-Section
+=====================================*/
+
+.header-section{
+    background-image: url(img/cover.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%; 
+
+}
+
+
+/* ===================================
+            About-Section
+=====================================*/
+
+.about-me{
+    margin-top: 100px;
+}
+
+
+.section-heading{
+    text-transform: uppercase;
+    font-size:1.75rem ;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #111;
+    margin: 10px 0;
+}
+
+.about-me p{
+    margin: 70px 0;
+}
+
+.my-images{
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-images .image{
     width: 30%;
 }
-.works .images img{
+
+.my-images .image img{
     width: 100%;
 }
 
-.works .images p{
-    padding: 15px;
-    text-align: center;
+.my-images .image h3{
     text-transform: uppercase;
-    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.06rem;
 }
 
-.my-work{
-    margin-bottom: 60px;
+
+/* ===================================
+             Portfolio
+=====================================*/
+
+.portfolio{
+    margin-top: 100px;
 }
 
-/* ------------------------------
-            Section Text
---------------------------------- */
-.work-image{
-    display:flex;
+.portfolio-item{
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 70px;
 }
-.work-image .imagex{
+
+.portfolio-item img{
     width: 32%;
-    margin-top: 30px;
-}
-.gallery{
-    margin-bottom: 70px;;
+    margin-bottom: 30px;
 }
 
 
-/* ------------------------------
-            Story
---------------------------------- */
-.story img{
+/* ===================================
+             Blog
+=====================================*/
+
+.blog{
+    margin-top: 80px;
+}
+
+.blog-text{
+    margin-top: 70px;
+}
+
+.blog-text img{
     width: 300px;
     float: left;
     padding-right: 20px;
     padding-bottom: 20px;
 }
-.my-story{
-    margin-bottom: 70px;
+
+.blog-text p{
+    font-size: 0.93rem;
 }
 
 
-/* ------------------------------
-            Form
---------------------------------- */
 
-form {
-text-align: center;
-margin-top: 55px;
+/* ===================================
+             Contact
+=====================================*/
+
+.contact{
+    margin-top: 100px;
+}
+
+form{
+    text-align: center;
+    margin-top: 55px;
+}
+
+form label{
+    font-size:1.125rem ;
+    color: #111;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 form input, form textarea{
     display: block;
-    width: 70%;
+    margin: 0 auto;
     border: 1px solid #111;
-    padding: 8px 0;
-    margin: 15px auto;
+    width: 70%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 7px;
 }
 
-form label{
-    padding: 20px 0;
-    font-size: 20px;
-    font-weight: 700;
-
+form textarea{
+    resize: none;
 }
 
-button{
+form button{
+    background-color: #111;
+    color: #fff;
+    letter-spacing: 2px;
     padding: 10px 20px;
-    font-family: 'Do Hyeon', sans-serif;
-    margin-bottom: 70px;
-}
-button:hover{
-    background-color: #111111;
-    color: #FF5757;
-   
+    margin-top: 10px;
+    border: 2px solid transparent;
+    transition: background 0.4s ease-in-out;
+    cursor: pointer;
 }
 
-/* ------------------------------
+form button:hover{
+    background-color: #fff;
+    color: #ff5757;
+    border: 2px solid #ff5757;
+
+}
+
+
+
+/* ===================================
               Footer
---------------------------------- */
+=====================================*/
+
+footer{
+    background-color: #111;
+    color: #fff;
+    margin-top: 70px;
+}
+
 footer p{
-padding: 25px 0;
-text-align: center;
-background-color: #111111 ;
-color: #d6d6d6;
-font-size: 0.8rem;
+    text-align: center;
+    padding: 20px;
 }
 
 
 
+/* ===================================
+             Media Query
+=====================================*/
+@media (max-width:1420px){
+     .container{
+         padding-left: 30px;
+         padding-right: 30px;
+     }
 
-
-
-
-
-
-
-
-
-
-
-/* *******************************
-           Media Query
-******************************** */
-
-@media all and (max-width:1200px){
-    .container {
-        margin: 0 10px;
-        color: #111111;
-        
-        transition: 0.3s all ease-in;
-    }
+ 
 }
 
-@media all and (max-width:768px){
-    body p{
-        font-size: 0.9rem;
+ @media (max-width:1200px){
+    /* Every Acceptable */
+ }
+
+ @media (max-width:991px){
+    .header-section{
+        background-image: url(img/cover2.jpg);    
+    }
+ }
+
+@media (max-width:768px){
+     .heading-div{
+         flex-direction: column;
+     }
+
+     .nav-menu {
+         margin-bottom: 30px;
+     }
+
+     .nav-menu a{
+         font-size: 1.125rem;
+         padding: 5px;
+         margin: 0 10px;
+     }
+
+     .my-images{
+         flex-direction: column;
+     }
+
+     .my-images .image{
+         width: 100%;
+         margin: 0 auto;
+         margin-bottom: 50px;
+     }
+
+     .portfolio-item img{
+         width: 47%;
+     }
+
+     .blog-text img{
+         float: none;
+         padding: 0;
+         width: 100%;
+         margin-bottom: 25px;
+     }
+
+     form input, form textarea{
+         width: 90%;
+     }
+     .header-section{
+        background-image: url(img/cover3.jpg);    
     }
 
-    body h1,
-    body h2,
-    body h3,
-    body h4{
-        font-size: 1.4rem;
+}
+
+@media (max-width:480px){
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
-    .works {
+    .nav-menu {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
+        margin-top: -120px;
     }
 
-    .works .images  {
-        width: 90%;
-    }
-
-    .work-image .imagex {
-        width: 48%;
-        margin-top: 17px;
-    }
-
-    .story{
-        text-align: center;
-    }
-    .story img{
-        float: none;
-        width: 300px;
-        padding-right: 0px;
-        padding-bottom: 10px;
-    }
-}
-
-@media all and (max-width:500px){
-    .header-nav ul li{
-        margin: 0 10px;
-    }
-    .header-nav ul{
+    .nav-menu a{
+        font-size: 1.5rem;
         margin: 20px;
     }
-    .header-section{
-        flex-direction: column;
-    }
 
-    .header-nav ul li a{
-        padding:  0;
+    .hamburger-menu{
+        display: inline;
     }
-    .header-nav ul li a:hover {
-        border-bottom: 3px solid #FF5757;
-        background-color: red;
-    }
-
-    .work-image .imagex {
-        width: 98%;
-        margin-top: 15px;
-    }
-}
-
-@media all and (max-width:400px){
-    .header-nav ul{
-        margin: 10px;
-    }
-}
-
-@media all and (max-width:320px){
 
 }
 
-
-
-
-
+@media (max-width:320px){
+     
+}
 
 
 

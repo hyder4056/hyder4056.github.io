@@ -3,113 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- My Style -->
     <link rel="stylesheet" href="style.css">
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
 
-    <title>PhotoBirdie</title>
+    <title>PhotoBirdie Stdio</title>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <div class="header-section">
-                <div class="header-image">
-                    <img src="img/PhotoBirdie.png" alt="Logo">
-                </div>
+    <header id="home">
+        <nav class="sticky">
+            <div class="heading-div">
+                <a href="#home" class="smoothScroll"><img src="img/PhotoBirdie.png" alt="logo"></a>
+                <ul class="nav-menu">
+                    <a href="#about" class="smoothScroll">
+                        <li>About</li>
+                    </a>
+                    <a href="#portfolio" class="smoothScroll">
+                        <li>Portfolio</li>
+                    </a>
+                    <a href="#blog" class="smoothScroll">
+                        <li>Blog</li>
+                    </a>
+                    <a href="#contact" class="smoothScroll">
+                        <li>Contact</li>
+                    </a>
+                </ul>
 
-                <div class="header-nav">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+                <!-- Hamburger Menu -->
+                <a class="hamburger-menu">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                 </a>
+                
             </div>
         </nav>
+    </header>
 
-        <section class="header-big-image"></section>
+    <section class="header-section container"> </section>
 
-        <section class="big-text">
-            <h2>About Me</h2>
-        </section>
-        <section class="line"></section>
-        <section class="section-text">
-            <p class="margin-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, quis exercitationem? Voluptatibus laboriosam ratione aliquam ea libero in nobis illo deserunt aliquid error quae aspernatur, excepturi eos laborum quidem doloribus. Eius nam, obcaecati eligendi vero et, quos esse ab neque, consequatur necessitatibus aspernatur possimus porro distinctio officiis quidem odio laudantium sint eum excepturi id nemo? Quisquam earum, impedit deleniti nulla velit illum ipsam nesciunt qui porro atque exercitationem illo consequuntur nobis ipsum suscipit et nostrum dolor doloribus.</p>
+    <section class="about-me container" id="about">
+        <h2 class="section-heading">About Me</h2>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus unde non, necessitatibus vitae excepturi sint, vel, aspernatur error deleniti nemo similique voluptate? Optio soluta nobis doloribus modi. Vitae animi reprehenderit corporis rem sint, provident veniam, architecto et fugit eveniet possimus commodi est iure ab quas quam laudantium nihil aspernatur officia quae explicabo quis voluptate! Nihil adipisci vel, assumenda impedit ex rerum totam. Ratione iste nam asperiores velit. Earum deserunt sequi fuga sunt blanditiis recusandae harum ducimus autem cum necessitatibus, quis exercitationem consectetur excepturi quaerat obcaecati expedita porro cupiditate nam illum error doloremque. Odit non accusamus vero voluptate distinctio, laboriosam cupiditate sapiente. <br><br>Sapiente eveniet quos architecto eius? Voluptatibus, dicta. Aperiam, natus hic, odio amet, magni asperiores maxime accusantium placeat voluptatem itaque iure a sint laudantium molestiae. Dolor ex nulla error omnis maiores dignissimos nobis odio reprehenderit vero eligendi! Architecto dicta laborum voluptate inventore. Exercitationem, veniam? Dolores tempora animi veniam quia?</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus nam, cupiditate mollitia voluptatem amet obcaecati in earum sunt illo unde aspernatur, odio officia excepturi ullam deleniti ab sequi, fugit nostrum. Consequatur, suscipit at. Rem omnis facere temporibus reprehenderit. Necessitatibus totam nisi sit eum repellat pariatur rem fugiat libero illum odio officia excepturi ullam deleniti ab sequi, fugit nostrum. Consequatur, suscipit at. Rem omnis facere temporibus reprehenderit. Necessitatibus totam nisi sit eum repellat pariatur rem fugiat libero illum officiis.</p>
-        </section>
-
-        <section class="my-work">
-            <div class="works">
-                <div class="images"><a href=""><img src="img/1.jpg" alt=""></a><p>old photos</p></div>
-                
-                <div class="images"><a href=""><img src="img/2.jpg" alt=""></a><p>me in action</p></div>
-                
-                <div class="images"><a href=""><img src="img/3.jpg" alt=""></a><p>my profile image</p></div>
-                
+        <div class="my-images">
+            <div class="image">
+                <img src="img/1.jpg" alt="old photo Image">
+                <h3>Old Photo</h3>
             </div>
-        </section>
 
-        <section class="big-text">
-            <h2>About Me</h2>
-        </section>
-        <section class="line"></section>
-
-        <section class="gallery">
-            <div class="work-image">
-                <img src="img/4.jpg" alt="" class="imagex">
-                <img src="img/5.jpg" alt="" class="imagex">
-                <img src="img/6.jpg" alt="" class="imagex">
-                <img src="img/7.jpg" alt="" class="imagex">
-                <img src="img/8.jpg" alt="" class="imagex">
-                <img src="img/9.jpg" alt="" class="imagex">
+            <div class="image">
+                <img src="img/2.jpg" alt="Me in Action">
+                <h3>Me in Action</h3>
             </div>
-        </section>
 
-        <section class="big-text">
-            <h2>My Story</h2>
-        </section>
-        <section class="line"></section>
-
-        <section class="my-story">
-            <div class="story">
-                <img src="img/10.jpg" alt="">
-                <p class="margin-bottom">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo nostrum et nulla minima nemo vero repellat qui molestiae provident ullam id optio sint placeat ipsa, voluptatum hic laudantium odio obcaecati consequatur non delectus, eveniet deserunt tempora. Repellat, excepturi ducimus, nostrum fuga eum, sint soluta autem sit vitae cumque ab voluptatum!</p>
-                <p class="margin-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores similique alias cumque autem dicta, veniam saepe velit tempora odit tenetur illo explicabo sunt nihil molestiae eligendi provident ad cum et quo distinctio rerum exercitationem officiis. Tempora nesciunt ducimus eligendi voluptatibus! Porro molestias corporis sunt consequuntur est, officiis eos eaque animi deserunt doloribus blanditiis labore. Dolor quos reiciendis eius labore.</p>
-                <p class="margin-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quos est, dolore id provident aliquid et ap Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ad error voluptates tempora nulla sequi, esse nobis. Illo earum cupiditate, voluptatibus vel id quaerat excepturi nulla fugit assumenda vitae quos.eriam esse, officiis eos velit magnam inventore culpa cupiditate perferendis placeat. Aperiam officiis deserunt et sint accusantium optio qui aliquam aliquid fuga sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem doloribus nostrum eveniet deleniti! Commodi praesentium aspernatur architecto minus nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae aut aliquid culpa quia facere. Quia dignissimos molestiae cupiditate at, dolo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut saepe itaque, quasi tempore nostrum beatae veritatis. Ullam, dicta, explicabo a quas doloremque itaque, aliquid nam laudantium eligendi sint laboriosam tempore adipisci numquam hic impedit libero sit omnis quaerat exercitationem quo?res consequatur explicabo magni vero voluptatibus fugiat praesentium quam, nobis aut? ullam? Perferendis.</p>
+            <div class="image">
+                <img src="img/3.jpg" alt="My Profile Image">
+                <h3>My Profile Image</h3>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="big-text">
-            <h2>Contact</h2>
-        </section>
-        <section class="line"></section>
+    <section class="portfolio container" id="portfolio">
+        <h2 class="section-heading">Portfolio</h2>
+        <div class="line"></div>
+        <div class="portfolio-item container">
+            <img src="img/4.jpg" alt="images">
+            <img src="img/5.jpg" alt="images">
+            <img src="img/6.jpg" alt="images">
+            <img src="img/7.jpg" alt="images">
+            <img src="img/8.jpg" alt="images">
+            <img src="img/9.jpg" alt="images">
+        </div>
+    </section>
 
-        <section class="form-section">
-            <form action="#">
-                <label for="name">Name</label>
-                <input type="text" class="name" id="name">
-                <label for="email">Email</label>
-                <input type="text" class="mail" id="mail">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5"></textarea>
-                <button>Submit</button>
-            </form>
-        </section>
+    <section class="blog container" id="blog">
+        <h2 class="section-heading">My Firt Story</h2>
+        <div class="line"></div>
+        <div class="blog-text">
+            <img src="img/10.jpg" alt="image">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque id iusto illum quos fugit iure ea nam. Id, doloremque similique neque eos, assumenda error cupiditate quibusdam ex dolorem placeat possimus facilis inventore? Ratione amet doloremque, ab quam eaque nihil necessitatibus facere esse atque adipisci iusto, nisi architecto dicta aliquam animi eveniet debitis. Est eius fugit aperiam aliquid! Facilis laboriosam aperiam odit doloribus quae dolor! Dolore delectus porro amet obcaecati omnis quaerat aspernatur! Consectetur, ipsum deleniti! Ex sunt impedit necessitatibus eius quam nobis? Fuga neque, laudantium vitae at perspiciatis voluptatibus reiciendis molestias odit aperiam nam consequatur ipsam nostrum, quibusdam temporibus sunt harum ullam placeat iste fugit optio possimus? Numquam temporibus ex mollitia labore nisi error aliquam voluptatem provident fuga a assumenda voluptatum quam deleniti doloremque at, velit libero nostrum dolor praesentium totam corrupti optio? Enim quae unde, voluptatem fugiat provident facere maxime corporis quo repudiandae doloribus aliquam nostrum ex. Odit incidunt quis aperiam aut, voluptates placeat, eveniet sed accusantium ab nobis quisquam voluptatum sequi nostrum rerum ipsa minima tempora quibusdam sapiente vero deleniti vitae, ipsam inventore iure. Quam fuga harum amet alias ipsam. Totam magnam rerum error? Neque fuga vero ut aperiam, et autem, doloribus quibusdam similique debitis placeat quaerat dignissimos, corrupti delectus quo. Ratione numquam, aspernatur quos quidem explicabo quo qui nam vitae eveniet totam fugit aperiam voluptatum voluptates. Doloremque perspiciatis expedita ad magnam similique, et repudiandae hic veniam, voluptatem quam soluta temporibus voluptas aperiam dolorem ut amet qui porro maxime atque! Doloribus, illo odit quis saepe sit, repudiandae dolore eligendi fugiat vel culpa molestiae ipsam. Doloribus quidem praesentium, odio quasi unde autem impedit exercitationem labore repellat, vero iure rerum.</p>
+        </div>
+    </section>
 
-        <footer>
-            <p>&copy;Ali Hyder. All Right Reserved.</p>
-        </footer>
+    <section class="contact container" id="contact">
+        <h2 class="section-heading">Contact</h2>
+        <div class="line"></div>
+        <form action="https://submit-form.com/jR3bDSbLmKkDNYcg0Jdkq" target="_self" class="input-form"> 
+            <label for="name">Your Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Your  E-mail</label>
+            <input type="email" name="_replyto" id="mail" >
+            <label for="message">Your Message</label>
+            <textarea name="idMessage" id="message" rows="5"></textarea>
+            <button>Submit</button>
+        </form>
+    </section>
 
+    <footer>
+        <p>&copy;Ali Hyder 2020</p>
+    </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
+    <script src="script.js"></script>
 
-
-
-
-
-    </div>
+   
 </body>
 </html>
